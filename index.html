@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Utsav - BTech CSE Student | Developer & Tech Enthusiast Portfolio" />
+  <title>Utsav | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+  <div class="noise"></div>
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo"><span class="logo-bracket">&lt;</span>Utsav<span class="logo-bracket">/&gt;</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting reveal-up">Hello, World! 👋</p>
+      <h1 class="hero-title reveal-up">I'm <span class="gradient-text">Utsav</span></h1>
+      <div class="hero-typed-wrapper reveal-up">
+        <span class="hero-static">I </span>
+        <span class="typed-text" id="typed"></span>
+        <span class="typed-cursor">|</span>
+      </div>
+      <p class="hero-desc reveal-up">A passionate <strong>BTech CSE</strong> student crafting digital experiences with clean code and creative design. Turning ideas into reality, one line at a time.</p>
+      <div class="hero-cta reveal-up">
+        <a href="#projects" class="btn btn-primary" id="hero-cta-projects"><span>View My Work</span><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#contact" class="btn btn-ghost" id="hero-cta-contact"><span>Get In Touch</span></a>
+      </div>
+      <div class="hero-socials reveal-up">
+        <a href="https://github.com/utsav" target="_blank" class="social-icon" aria-label="GitHub" id="social-github"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" class="social-icon" aria-label="LinkedIn" id="social-linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/" target="_blank" class="social-icon" aria-label="Twitter" id="social-twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="mailto:utsav@email.com" class="social-icon" aria-label="Email" id="social-email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual reveal-right">
+      <div class="avatar-wrapper">
+        <div class="avatar-ring"></div>
+        <div class="avatar-ring ring-2"></div>
+        <div class="avatar-placeholder">
+          <div class="avatar-initials">UR</div>
+          <div class="avatar-glow"></div>
+        </div>
+        <div class="floating-badge badge-1"><i class="fa-solid fa-code"></i><span>Developer</span></div>
+        <div class="floating-badge badge-2"><i class="fa-solid fa-graduation-cap"></i><span>CSE 3rd Year</span></div>
+        <div class="floating-badge badge-3"><i class="fa-solid fa-star"></i><span>Age 20</span></div>
+      </div>
+    </div>
+    <div class="scroll-indicator"><div class="scroll-line"></div><span>Scroll</span></div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01. About Me</span>
+        <h2 class="section-title">Who Am I?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text glass-card">
+          <p>Hey there! I'm <strong>Utsav</strong>, a 20-year-old BTech Computer Science & Engineering student with a burning passion for technology and innovation. Born on <strong>5th August 2005</strong>, I'm currently in my <strong>3rd year</strong>, building skills that bridge the gap between ideas and real-world solutions.</p>
+          <p>I love exploring everything from <strong>full-stack web development</strong> to <strong>data structures & algorithms</strong>. When I'm not coding, I'm learning about the latest trends in AI, open-source, and tech culture.</p>
+          <p>My goal is to build products that are not only functional but also <strong>beautiful</strong> and <strong>impactful</strong>.</p>
+          <a href="#" class="btn btn-primary" id="download-resume"><i class="fa-solid fa-download"></i><span>Download Resume</span></a>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card glass-card" id="stat-age"><div class="stat-number" data-target="20">0</div><div class="stat-label">Years Old</div></div>
+          <div class="stat-card glass-card" id="stat-projects"><div class="stat-number" data-target="15">0</div><div class="stat-label">Projects Done</div></div>
+          <div class="stat-card glass-card" id="stat-year"><div class="stat-number" data-target="3">0</div><div class="stat-label">Year of Study</div></div>
+          <div class="stat-card glass-card" id="stat-skills"><div class="stat-number" data-target="10">0</div><div class="stat-label">Technologies</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02. Skills</span>
+        <h2 class="section-title">Tech Stack</h2>
+      </div>
+      <div class="skills-categories">
+        <div class="skill-group glass-card">
+          <div class="skill-group-header"><i class="fa-solid fa-code"></i><h3>Languages</h3></div>
+          <div class="skills-grid">
+            <div class="skill-chip" id="skill-c"><i class="fa-solid fa-c"></i> C</div>
+            <div class="skill-chip" id="skill-cpp">C++</div>
+            <div class="skill-chip" id="skill-python"><i class="fa-brands fa-python"></i> Python</div>
+            <div class="skill-chip" id="skill-js"><i class="fa-brands fa-js"></i> JavaScript</div>
+            <div class="skill-chip" id="skill-java"><i class="fa-brands fa-java"></i> Java</div>
+          </div>
+        </div>
+        <div class="skill-group glass-card">
+          <div class="skill-group-header"><i class="fa-solid fa-layer-group"></i><h3>Web Development</h3></div>
+          <div class="skills-grid">
+            <div class="skill-chip" id="skill-html"><i class="fa-brands fa-html5"></i> HTML5</div>
+            <div class="skill-chip" id="skill-css"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+            <div class="skill-chip" id="skill-react"><i class="fa-brands fa-react"></i> React</div>
+            <div class="skill-chip" id="skill-node"><i class="fa-brands fa-node-js"></i> Node.js</div>
+            <div class="skill-chip" id="skill-tailwind">Tailwind</div>
+          </div>
+        </div>
+        <div class="skill-group glass-card">
+          <div class="skill-group-header"><i class="fa-solid fa-wrench"></i><h3>Tools & Platforms</h3></div>
+          <div class="skills-grid">
+            <div class="skill-chip" id="skill-git"><i class="fa-brands fa-git-alt"></i> Git</div>
+            <div class="skill-chip" id="skill-github"><i class="fa-brands fa-github"></i> GitHub</div>
+            <div class="skill-chip" id="skill-linux"><i class="fa-brands fa-linux"></i> Linux</div>
+            <div class="skill-chip" id="skill-vscode">VS Code</div>
+            <div class="skill-chip" id="skill-figma">Figma</div>
+          </div>
+        </div>
+        <div class="skill-group glass-card">
+          <div class="skill-group-header"><i class="fa-solid fa-brain"></i><h3>CS Fundamentals</h3></div>
+          <div class="skills-grid">
+            <div class="skill-chip" id="skill-dsa">DSA</div>
+            <div class="skill-chip" id="skill-os">OS</div>
+            <div class="skill-chip" id="skill-dbms">DBMS</div>
+            <div class="skill-chip" id="skill-cn">CN</div>
+            <div class="skill-chip" id="skill-oops">OOP</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03. Projects</span>
+        <h2 class="section-title">What I've Built</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card glass-card" id="project-1">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-solid fa-robot"></i></div>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="project-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">AI Chatbot</h3>
+          <p class="project-desc">An intelligent chatbot built with Python and NLP techniques that can answer questions and assist users in real time.</p>
+          <div class="project-tags"><span>Python</span><span>NLP</span><span>Flask</span></div>
+        </div>
+        <div class="project-card glass-card featured" id="project-2">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="project-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <span class="featured-badge">⭐ Featured</span>
+          <h3 class="project-title">E-Commerce Platform</h3>
+          <p class="project-desc">A full-stack e-commerce platform with product listings, cart, authentication, and payment integration using React and Node.js.</p>
+          <div class="project-tags"><span>React</span><span>Node.js</span><span>MongoDB</span><span>Stripe</span></div>
+        </div>
+        <div class="project-card glass-card" id="project-3">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="project-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">DSA Visualizer</h3>
+          <p class="project-desc">An interactive web tool to visualize sorting, searching, trees, and graphs with step-by-step animations.</p>
+          <div class="project-tags"><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div>
+        </div>
+        <div class="project-card glass-card" id="project-4">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-solid fa-cloud-sun"></i></div>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="project-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Weather Dashboard</h3>
+          <p class="project-desc">A weather application that fetches real-time data from OpenWeatherMap API, displaying forecasts and live weather info.</p>
+          <div class="project-tags"><span>JavaScript</span><span>REST API</span><span>CSS3</span></div>
+        </div>
+        <div class="project-card glass-card" id="project-5">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="project-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Student Portal</h3>
+          <p class="project-desc">A comprehensive college student management portal for attendance, grades, timetables, and notices.</p>
+          <div class="project-tags"><span>React</span><span>Firebase</span><span>Tailwind</span></div>
+        </div>
+        <div class="project-card glass-card" id="project-6">
+          <div class="project-card-top">
+            <div class="project-icon"><i class="fa-solid fa-terminal"></i></div>
+            <div class="project-links">
+              <a href="#" class="project-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="project-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">CLI Task Manager</h3>
+          <p class="project-desc">A feature-rich command-line task manager with priority queues, deadlines, tags, and file persistence — built in Python.</p>
+          <div class="project-tags"><span>Python</span><span>CLI</span><span>JSON</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04. Education</span>
+        <h2 class="section-title">My Journey</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" id="edu-btech">
+          <div class="timeline-dot"><i class="fa-solid fa-laptop-code"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-year">2023 – Present</div>
+            <h3>B.Tech in Computer Science & Engineering</h3>
+            <p class="timeline-institution">University / College of Engineering</p>
+            <p class="timeline-desc">Currently in 3rd year, focusing on software development, algorithms, and modern web technologies. Active in coding clubs and hackathons.</p>
+            <div class="timeline-tags"><span>Programming</span><span>Web Dev</span><span>AI/ML</span><span>Hackathons</span></div>
+          </div>
+        </div>
+        <div class="timeline-item" id="edu-12th">
+          <div class="timeline-dot"><i class="fa-solid fa-school"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-year">2022 – 2023</div>
+            <h3>Class XII – Science Stream (PCM + CS)</h3>
+            <p class="timeline-institution">Senior Secondary School</p>
+            <p class="timeline-desc">Completed higher secondary with Physics, Chemistry, Mathematics and Computer Science. Built strong programming foundations.</p>
+            <div class="timeline-tags"><span>PCM</span><span>Computer Science</span></div>
+          </div>
+        </div>
+        <div class="timeline-item" id="edu-10th">
+          <div class="timeline-dot"><i class="fa-solid fa-book-open"></i></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-year">2020 – 2021</div>
+            <h3>Class X – Secondary School</h3>
+            <p class="timeline-institution">Secondary School</p>
+            <p class="timeline-desc">Secured excellent marks in board examinations and discovered my passion for computers and problem-solving.</p>
+            <div class="timeline-tags"><span>Mathematics</span><span>Science</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05. Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Have a project in mind or just want to say hi? My inbox is always open!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card glass-card" id="contact-email">
+            <i class="fa-solid fa-envelope"></i>
+            <div><h4>Email</h4><a href="mailto:utsav@email.com">utsav@email.com</a></div>
+          </div>
+          <div class="contact-card glass-card" id="contact-location">
+            <i class="fa-solid fa-location-dot"></i>
+            <div><h4>Location</h4><p>India</p></div>
+          </div>
+          <div class="contact-card glass-card" id="contact-availability">
+            <i class="fa-solid fa-circle-check"></i>
+            <div><h4>Availability</h4><p>Open to Internships & Collaborations</p></div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/utsav" target="_blank" class="social-btn" id="contact-github"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com/" target="_blank" class="social-btn" id="contact-linkedin"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+          </div>
+        </div>
+        <form class="contact-form glass-card" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or just say hello!" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="send-msg"><span>Send Message</span><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#hero" class="footer-logo"><span class="logo-bracket">&lt;</span>Utsav<span class="logo-bracket">/&gt;</span></a>
+        <p class="footer-text">Designed & Built with <span class="heart">❤️</span> by Utsav &nbsp;•&nbsp; BTech CSE '27</p>
+        <div class="footer-socials">
+          <a href="https://github.com/utsav" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <p class="footer-copy">© 2025 Utsav. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
